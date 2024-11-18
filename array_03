@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int num[1024],i;
+    printf("Input the number of elements to be stored in the array  = ");
+    scanf("%d",&i);
+    for(int n=0;n<i;n++)
+    {
+        printf("Element-%d = ",n);
+        scanf("%d",&num[n]);
+    }
+    printf("Even Number Found:\n");
+    for(int n=0;n<i;n++)
+    {
+        if(num[n]%2==0)
+        {
+            printf("%d ",num[n]);
+        }
+    }
+    printf("\nOdd Number Found:\n");
+    for(int n=0;n<i;n++)
+    {
+        if(num[n]%2==1)
+        {
+            printf("%d ",num[n]);
+        }
+    }
+  return 0;
+}
